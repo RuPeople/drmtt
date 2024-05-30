@@ -1,0 +1,21 @@
+{
+  "Title": "Online Booking",
+  "NameInputPlaceholder": "Your Name",
+  "CitySelectPlaceholder": "City",
+  "DateSelectPlaceholder": "Date",
+  "TimeSelectPlaceholder": "Time",
+  "SubmitButtonTitle": "Book Now",
+  "CityRequiredError": "Please select a city",
+  "DateRequiredError": "Please select a date",
+  "TimeRequiredError": "Please choose a time",
+  "PhoneRequiredError": "Please enter your phone number, otherwise our experts will not be able to contact you",
+  "PhoneInvalidError": "Please enter the correct telephone number, otherwise our specialists will not be able to contact you",
+  "NameRequiredError": "Please provide a name",
+  "SelectedCity": {
+    "PriceTitle": "Service Price: "
+  },
+  "SuccessBookingModal": {
+    "Title": "Booking has been successfully sent!",
+    "Button": "All bookings page"
+  }
+}

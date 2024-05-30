@@ -1,0 +1,103 @@
+.Select {
+    position: relative;
+    display: flex;
+}
+
+.Select.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.button {
+    border: 1px solid transparent;
+    padding: 16px 8px 16px 16px;
+    border-radius: var(--border-radius-s);
+    background: var(--background-primary);
+    flex-grow: 1;
+    text-align: start;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 24px;
+    cursor: pointer;
+}
+
+.button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.button.error {
+    background: var(--background-error);
+}
+
+.button:focus-visible {
+    background: var(--background-page);
+    outline: none;
+    border: 1px solid var(--control-border);
+    box-shadow: 0 6px 20px var(--control-border);
+}
+
+.button:hover {
+    border: 1px solid var(--control-border);
+}
+
+.placeholder {
+    color: var(--text-secondary);
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+}
+
+.placeholder.error {
+    color: var(--brand);
+}
+
+.value {
+    color: var(--text-primary);
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+}
+
+.icon {
+    rotate: 90deg;
+    justify-content: center;
+    transition: var(--transition-fast);
+    fill: var(--text-secondary);
+}
+
+.icon.opened {
+    rotate: -90deg;
+    transition: var(--transition-fast);
+}
+
+.optionList {
+    position: absolute;
+    background: var(--background-primary);
+    width: 100%;
+    gap: 4px;
+    padding: 8px;
+    top: calc(100% + 16px);
+    overflow: hidden auto;
+    max-height: 400px;
+    border-radius: var(--border-radius-s);
+    box-shadow: 0 6px 20px hsla(224deg, 52%, 22%, 10%);
+    z-index: var(--z-index-dropdown);
+}
+
+.option {
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-s);
+}
+
+.option:focus-visible {
+    background: var(--background-page);
+    outline: none;
+    border: 1px solid var(--control-border);
+    box-shadow: 0 6px 20px hsla(224deg, 52%, 22%, 10%);
+}
+
+.option:hover {
+    border: 1px solid var(--control-border);
+    background: var(--background-page);
+}

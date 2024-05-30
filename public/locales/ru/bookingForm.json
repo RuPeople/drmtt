@@ -1,0 +1,21 @@
+{
+  "Title": "Онлайн запись",
+  "NameInputPlaceholder": "Ваше имя",
+  "CitySelectPlaceholder": "Город",
+  "DateSelectPlaceholder": "Дата",
+  "TimeSelectPlaceholder": "Время",
+  "SubmitButtonTitle": "Записаться",
+  "CityRequiredError": "Пожалуйста, выберете город",
+  "DateRequiredError": "Пожалуйста, выберете дату",
+  "TimeRequiredError": "Пожалуйста, выберете время",
+  "PhoneRequiredError": "Пожалуйста, введите телефон, иначе наши специалисты не смогут связаться с вами",
+  "PhoneInvalidError": "Пожалуйста, введите корректный телефон, иначе наши специалисты не смогут связаться с вами",
+  "NameRequiredError": "Пожалуйста, укажите имя",
+  "SelectedCity": {
+    "PriceTitle": "Стоимость услуги: "
+  },
+  "SuccessBookingModal": {
+    "Title": "Бронирование успешно отправлено!",
+    "Button": "На страницу всех бронирований"
+  }
+}

@@ -1,0 +1,45 @@
+.Button {
+    background: var(--brand);
+    color: var(--text-primary-inverted);
+    padding: 12px 24px;
+    font-size: var(--font-size-l);
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.Button.disabled {
+    opacity: 0.5;
+}
+
+.Button:focus-visible {
+    outline: var(--outline) auto 1px;
+}
+
+.outline {
+    background: var(--text-primary-inverted);
+    border: 4px solid var(--brand);
+    color: var(--brand);
+}
+
+.clear {
+    color: var(--secondary-color);
+    background: none;
+    padding: initial;
+}
+
+.round_m {
+    border-radius: var(--border-radius-m);
+}
+
+.round_l {
+    border-radius: var(--border-radius-l);
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

@@ -1,0 +1,3 @@
+export const ANIMATION_DELAY_FAST = 200;
+export const ANIMATION_DELAY_MEDIUM = 500;
+export const ANIMATION_DELAY_SLOW = 750;

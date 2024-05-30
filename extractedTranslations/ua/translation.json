@@ -1,0 +1,39 @@
+{
+  "City": "City",
+  "City is required": "City is required",
+  "CityInputPlaceholder": "CityInputPlaceholder",
+  "CityRequiredError": "CityRequiredError",
+  "CitySelectPlaceholder": "CitySelectPlaceholder",
+  "Date": "Date",
+  "Date is required": "Date is required",
+  "DateRequiredError": "DateRequiredError",
+  "DateSelectPlaceholder": "DateSelectPlaceholder",
+  "DeleteBooking": "DeleteBooking",
+  "Empty": "Empty",
+  "Invalid phone number": "Invalid phone number",
+  "Name": "Name",
+  "Name is required": "Name is required",
+  "NameInputPlaceholder": "NameInputPlaceholder",
+  "NameRequiredError": "NameRequiredError",
+  "Not found": "Not found",
+  "Phone": "Phone",
+  "Phone number is required": "Phone number is required",
+  "PhoneInvalidError": "PhoneInvalidError",
+  "PhoneRequiredError": "PhoneRequiredError",
+  "Reload page": "Reload page",
+  "SelectedCity": {
+    "PriceTitle": "PriceTitle"
+  },
+  "SubmitButtonTitle": "SubmitButtonTitle",
+  "SuccessBookingModal": {
+    "Button": "Button",
+    "Title": "Title"
+  },
+  "Time": "Time",
+  "Time is required": "Time is required",
+  "TimeRequiredError": "TimeRequiredError",
+  "TimeSelectPlaceholder": "TimeSelectPlaceholder",
+  "Title": "Title",
+  "Uncaught error": "Uncaught error",
+  "Статьи не найдены": "Статьи не найдены"
+}

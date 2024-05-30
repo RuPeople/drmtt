@@ -1,0 +1,21 @@
+{
+  "CityRequiredError": "",
+  "CitySelectPlaceholder": "",
+  "DateRequiredError": "",
+  "DateSelectPlaceholder": "",
+  "NameInputPlaceholder": "",
+  "NameRequiredError": "",
+  "PhoneInvalidError": "",
+  "PhoneRequiredError": "",
+  "SelectedCity": {
+    "PriceTitle": ""
+  },
+  "SubmitButtonTitle": "",
+  "SuccessBookingModal": {
+    "Button": "",
+    "Title": ""
+  },
+  "TimeRequiredError": "",
+  "TimeSelectPlaceholder": "",
+  "Title": ""
+}

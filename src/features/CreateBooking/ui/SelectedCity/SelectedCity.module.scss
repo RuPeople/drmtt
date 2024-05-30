@@ -1,0 +1,12 @@
+@use "shared/styles/mq";
+
+.SelectedCity {
+    display: grid;
+    gap: 4px;
+    padding: 16px;
+}
+
+.phonesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

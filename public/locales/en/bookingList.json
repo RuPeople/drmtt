@@ -1,0 +1,9 @@
+{
+  "Empty": "No bookings found",
+  "City": "City",
+  "Date": "Date",
+  "Time": "Time",
+  "Phone": "Phone",
+  "Name": "Name",
+  "DeleteBooking": "Delete booking"
+}

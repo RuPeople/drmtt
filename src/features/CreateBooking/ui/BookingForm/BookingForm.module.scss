@@ -1,0 +1,44 @@
+@use "shared/styles/mq";
+
+.BookingForm {
+    display: grid;
+}
+
+.logoWrapper {
+    display: grid;
+    grid-template-columns: 39px 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: var(--font-size-xxl);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.inputsWrapper {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.selectedCityWrapper {
+    display: grid;
+    gap: 4px;
+    padding: 16px;
+}
+
+.dateTimeInputsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    @include mq.lower-sm {
+        grid-template-columns: initial;
+    }
+}
+
+.submitButton {
+    margin: auto;
+}

@@ -1,0 +1,15 @@
+.Link {
+    text-decoration: none;
+}
+
+.primary {
+    color: var(--link);
+}
+
+.secondary {
+    color: var(--brand);
+}
+
+.Link:focus-visible {
+    outline: var(--outline) auto 1px;
+}

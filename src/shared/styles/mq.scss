@@ -1,0 +1,185 @@
+@use 'sass:map';
+
+$breakpoints: (
+    xxxs: 375px,
+    xxs: 576px,
+    xs: 667px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1300px,
+    xxl: 1440px,
+    xxxl: 1600px,
+    fullhd: 1920px,
+    qhd: 2560px,
+    wqxga: 3200px,
+);
+
+@mixin -lower($key) {
+    $size: map.get($breakpoints, $key);
+
+    @media (max-width: $size - 0.1px) {
+        @content;
+    }
+}
+
+@mixin -greater($key) {
+    $size: map.get($breakpoints, $key);
+
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin -between($keyFrom, $keyTo) {
+    $size-from: map.get($breakpoints, $keyFrom);
+    $size-to: map.get($breakpoints, $keyTo);
+
+    @media (min-width: $size-from) and (max-width: $size-to - 0.1px) {
+        @content;
+    }
+}
+
+@mixin lower-xxxs {
+    @include -lower(xxxs) {
+        @content;
+    }
+}
+
+@mixin lower-xxs {
+    @include -lower(xxs) {
+        @content;
+    }
+}
+
+@mixin lower-xs {
+    @include -lower(xs) {
+        @content;
+    }
+}
+
+@mixin lower-sm {
+    @include -lower(sm) {
+        @content;
+    }
+}
+
+@mixin lower-md {
+    @include -lower(md) {
+        @content;
+    }
+}
+
+@mixin lower-lg {
+    @include -lower(lg) {
+        @content;
+    }
+}
+
+@mixin lower-xl {
+    @include -lower(xl) {
+        @content;
+    }
+}
+
+@mixin lower-xxl {
+    @include -lower(xxl) {
+        @content;
+    }
+}
+
+@mixin lower-xxxl {
+    @include -lower(xxxl) {
+        @content;
+    }
+}
+
+@mixin lower-fullhd {
+    @include -lower(fullhd) {
+        @content;
+    }
+}
+
+@mixin lower-qhd {
+    @include -lower(qhd) {
+        @content;
+    }
+}
+
+@mixin lower-wqxga {
+    @include -lower(wqxga) {
+        @content;
+    }
+}
+
+@mixin greater-xxxs {
+    @include -greater(xxxs) {
+        @content;
+    }
+}
+
+@mixin greater-xxs {
+    @include -greater(xxs) {
+        @content;
+    }
+}
+
+@mixin greater-xs {
+    @include -greater(xs) {
+        @content;
+    }
+}
+
+@mixin greater-sm {
+    @include -greater(sm) {
+        @content;
+    }
+}
+
+@mixin greater-md {
+    @include -greater(md) {
+        @content;
+    }
+}
+
+@mixin greater-lg {
+    @include -greater(lg) {
+        @content;
+    }
+}
+
+@mixin greater-xl {
+    @include -greater(xl) {
+        @content;
+    }
+}
+
+@mixin greater-xxl {
+    @include -greater(xxl) {
+        @content;
+    }
+}
+
+@mixin greater-xxxl {
+    @include -greater(xxxl) {
+        @content;
+    }
+}
+
+@mixin greater-fullhd {
+    @include -lower(fullhd) {
+        @content;
+    }
+}
+
+@mixin greater-qhd {
+    @include -lower(qhd) {
+        @content;
+    }
+}
+
+@mixin greater-wqxga {
+    @include -lower(wqxga) {
+        @content;
+    }
+}

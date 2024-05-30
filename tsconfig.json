@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        // Подсвечивает все места где не указан тип
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "es5",
+        "jsx": "react-jsx",
+        //позволяет не только ts, но и js
+        "allowJs": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./src/*"],
+            "entities/": ["entities/*"]
+        },
+        // import вместо require в webpack.config
+        "esModuleInterop": true,
+        // import без *
+        "allowSyntheticDefaultImports": true,
+    },
+    "include": [
+        ".eslintrc.js",
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./config/**/*.ts",
+        "./config/**/*.tsx",
+        "./babel.config.js",
+        "./webpack.config.ts",
+        "scripts/generate-visual-json-report.js"
+    ],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    },
+
+}

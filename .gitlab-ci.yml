@@ -1,0 +1,91 @@
+stages:
+  - setup
+  - lint
+  - test-unit
+  - build
+  - test-ui
+
+workflow:
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+services:
+  - docker:dind
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - storybook-static
+
+variables:
+  NODE_VERSION: "18"
+
+before_script:
+  - apt-get update && apt-get install -y curl
+  - curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash -
+  - echo "🚀 Starting Node.js $NODE_VERSION"
+  - apt-get install -y nodejs
+
+setup:
+  stage: setup
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "⚙ Installing modules"
+    - npm install
+
+lint_typescript:
+  stage: lint
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "✍ Linting typescript"
+    - npm run lint:ts
+
+lint_styles:
+  stage: lint
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "💅 Linting styles"
+    - npm run lint:scss
+
+unit_tests:
+  stage: test-unit
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "🃏 Running unit tests"
+    - npm run test:unit
+
+build_prod:
+  stage: build
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "🔧 Building production project"
+    - npm run build:prod
+
+build_storybook:
+  stage: build
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "📖 Building storybook"
+    - npm run storybook:build
+
+ui_tests:
+  stage: test-ui
+  image: node:18
+  tags:
+    - docker
+  script:
+    - echo "📸 Running screenshot testing"
+    - npm run test:ui:ci

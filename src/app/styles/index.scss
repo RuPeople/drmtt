@@ -1,0 +1,30 @@
+@import "reset";
+@import "./variables/global";
+@import "./themes/normal";
+@import "./themes/dark";
+
+body {
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-xl);
+    color: var(--text-primary);
+    font-family: Arial,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",-apple-system,sans-serif;
+}
+
+.app {
+    background: var(--background-page);
+    min-height: 100vh;
+    position: relative;
+}
+
+.content-page {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-grow: 1;
+    min-height: 100vh;
+    max-width: 100vw;
+}
